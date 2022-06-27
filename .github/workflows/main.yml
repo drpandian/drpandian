@@ -1,0 +1,47 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
+    I had successfully installed node 18.4.0 and npm 8.4.2 in Ubuntu 20.04. There was a problem in Web3 installation.
+ Error noticed when giving the command npm install web3. The error message was
+ 
+ 4 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+  When I ran the npm audit fix --force
+  I got a new error message
+  
+  web3  <=1.5.2
+Insecure Credential Storage in web3 - https://github.com/advisories/GHSA-27v7-qhfv-rqq8
+fix available via `npm audit fix --force`
+Will install web3@1.7.4, which is a breaking change
+node_modules/web3
+
+1 low severity vulnerability
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+On the internet there was no solution available and github was mentioning a new version for for web3.
+
+Solution:
+
+On the Terminal of VSCODE, I was unable to install web3 with the command npm install web3. But it was 
+found that fortunately, without making any changes, the following command installed web3 with out error.
+
+yarn add web3
+
+
+     
