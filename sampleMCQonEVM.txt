@@ -1,0 +1,105 @@
+﻿Dr.G.Soundra Pandian
+Dr.Pandian Technologies
+30-A, Nilgiri-1
+Sector-34, Noida-201301
+Uttarpradesh State
+India
+Mob:+91-9811200629
+Email:drpandiangs@gmail.com
+
+
+
+
+SAMPLE MCQ  ON EVM OPCODE
+
+PREPARED BY DR.G.SOUNDRA PANDIAN
+
+
+In an EVM the the total size of the stack is
+
+a) 1024 bytes
+b) 1024 words where 1 word is 256 bits
+c) 2^256 bytes
+d) 2^256 words where 1 word is 256 bits
+
+Answer: b)
+2. In an EVM the the total size of the MEMORY is
+
+a) 1024 bytes
+b) 1024 words where 1 word is 256 bits
+c) 2^256 bytes
+d) 2^256 words where 1 word is 256 bits
+Answer: c)
+
+3. In an EVM the the total size of the STORAGE is
+
+a) 1024 bytes
+b) 1024 words where 1 word is 256 bits
+c) 2^256 bytes
+d) 2^256 words where 1 word is 256 bits
+
+Answer: d)
+
+
+4. The difference between Memory and Storage is that
+
+a)Memory is persistant and Storage is volatile
+b) The amount of gas required to save data into storage is one of the lowest among operations of the EVM.
+c) Storage is persistant and Memory is not persistant
+d) The capacity of memory and that of storage are equal and both are read/write type
+
+Ans: c)
+
+5. Find the opcode that is not valid
+
+a) MSTORE8
+b) SSTORE8
+c) SWAP32
+d) CALLDATACOPY
+
+Ans: b)
+
+6. Examin the following code
+
+PUSH1 0x04
+PUSH1 0x03
+ADD  
+PUSH1 0x02
+MUL  
+PUSH1 0x00
+SSTORE  
+
+a) This will add the two numbers 0x03 and 0x02 to bring a result of 0x05
+b) This will multiply 0x02 and 0x00 to bring a result of 0x00
+c) This will produce a result of 0x0E
+d) The storage will be made all zeros.
+
+Ans: c   (4+3 =7  and 7*2 = 14 = 0x0E that is stored in slot 0 of storage)
+
+
+7.  In the program given below
+
+04: 5B     JUMPDEST
+05: 34     CALLVALUE
+06: 80     DUP1
+07: 15     ISZERO
+08: 61     PUSH2 0x0010
+0B: 57     JUMPI
+0C: 6000   PUSH1 0x00
+0E: 80     DUP1
+0F: FD     REVERT
+10: 56     JUMP
+11: 50     POP
+12: 60C7   PUSH1 0xc7
+14: 80     DUP1
+15: 61001F PUSH2 0x001f
+
+After executing the JUMPI instruction at location 0B, the program will jump to the location at
+
+a) O4
+b) 0F
+c) 05
+d) 10
+
+Answer: d)
+
